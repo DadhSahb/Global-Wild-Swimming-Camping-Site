@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Global Wild Swimming and Camping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Global Wild Swimming and Camping</h1>
+    </header>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/information.html">Information</a>
+      <a href="/pitch_type.html">Pitch Types and Availability</a>
+      <a href="/reviews.html">Reviews</a>
+      <a href="/features.html">Features</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/local_attractions.html">Local Attractions</a>
+    </nav>
+    <h1>Information</h1>
+    <ul>
+      <li><a href="#pitch-types">Pitch Types and Availability</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#local-attractions">Local Attractions</a></li>
+    </ul>
+
+    <section class="pitch-typess">
+      <h2>Pitch Types and Availability</h2>
+      <p>Search for availability:</p>
+      <form id="form">
+        <label for="pitch-type">Pitch Type:</label>
+        <select id="pitch-type" name="pitch-type">
+          <option value="tent">Tent Pitch</option>
+          <option value="touring-caravan">Touring Caravan Pitch</option>
+          <option value="motorhome">Motorhome Pitch</option>
+        </select>
+        <br />
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" />
+        <br />
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" />
+        <br />
+        <input type="submit" value="Search" />
+      </form>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <h3>On-site amenities:</h3>
+      <ul>
+        <li>Car parking</li>
+        <li>Showers</li>
+        <li>Internet access</li>
+      </ul>
+      <h3>Leisure facilities:</h3>
+      <ul>
+        <li>Entertainment</li>
+      </ul>
+      <h3>Nearby amenities:</h3>
+      <ul>
+        <li>Grocery store</li>
+        <li>Gas station</li>
+      </ul>
+      <h3>Rules:</h3>
+      <ul>
+        <li>No loud music after 10pm</li>
+        <li>No open fires</li>
+      </ul>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <div id="map"></div>
+      <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of the site
+          const site = { lat: 51.5074, lng: -0.1278 };
+          // The map, centered at site
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 12,
+            center: site,
+          });
+          // The marker, positioned at site
+          const marker = new google.maps.Marker({
+            position: site,
+            map: map,
+          });
+        }
+      </script>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+        async
+      ></script>
+    </section>
+
+    <section id="local-attractions">
+      <h2>Local Attractions</h2>
+      <ul>
+        <li>Tourist attraction 1</li>
+        <li>Tourist attraction 2</li>
+        <li>Walking trail 1</li>
+        <li>Walking trail 2</li>
+      </ul>
+    </section>
+    <footer>
+      <p>Copyright © Global Wild Swimming and Camping</p>
+      <div class="social-media">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+      </div>
+    </footer>
+  </body>
+</html>

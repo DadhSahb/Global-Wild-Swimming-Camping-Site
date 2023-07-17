@@ -1,0 +1,532 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: #555;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.slide-container {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slide-container img {
+  width: 100%;
+  height: auto;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar label {
+  display: block;
+  font-weight: bold;
+}
+
+.search-bar input[type="text"] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button[type="submit"] {
+  width: 20%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.captcha button {
+  width: 20%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.captcha button:hover {
+  background-color: #45a049;
+}
+
+.search-bar button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.services {
+  margin-top: 20px;
+}
+
+.services h3 {
+  font-weight: bolder;
+}
+
+.services ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.services a {
+  color: #333;
+  text-decoration: none;
+}
+
+.services a:hover {
+  text-decoration: underline;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+}
+
+.views {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.views span {
+  font-weight: bold;
+}
+
+.captcha {
+  margin-top: 20px;
+}
+
+.captcha label {
+  display: block;
+  font-weight: bold;
+}
+
+.captcha input[type="text"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.captcha img {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#information {
+  margin-top: 20px;
+}
+
+#information p {
+  line-height: 1.5;
+}
+
+#pitch-types {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pitch-types h2 {
+  font-weight: bold;
+}
+
+#pitch-types .search-bar {
+  margin-top: 20px;
+}
+
+#pitch-types .search-bar label {
+  display: block;
+  font-weight: bold;
+}
+
+#pitch-types .search-bar input[type="text"] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#pitch-types .search-bar button[type="submit"] {
+  width: 20%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#pitch-types .search-bar button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#pitch-types .pitch-types {
+  margin-top: 20px;
+}
+
+#pitch-types .pitch-types h3 {
+  font-weight: bold;
+}
+
+#pitch-types .pitch-types p {
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+}
+
+#contact form label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+#contact form button[type="submit"] {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button[type="submit"]:hover {
+  background-color: #0d47a1;
+}
+
+#contact form label[for="privacy-policy"] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+#contact form input[type="checkbox"] {
+  margin-right: 10px;
+}
+#reviews {
+  margin-top: 50px;
+}
+
+#reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#reviews ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#reviews li {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#reviews li h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#reviews li p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+/* Style for the Features section */
+#features {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Style for the headings */
+#features h2,
+#features h3 {
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Style for the lists */
+#features ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the list items */
+#features li {
+  padding: 5px 0;
+}
+
+/* Style for the nearby amenities */
+#features h3:nth-of-type(3) {
+  margin-top: 40px;
+}
+
+/* Style for the rules */
+#features h3:nth-of-type(4) {
+  margin-top: 40px;
+}
+
+/* Style for the links */
+#features a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Style for the links on hover */
+#features a:hover {
+  text-decoration: underline;
+}
+#local-attractions {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+#local-attractions h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#local-attractions ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#local-attractions li {
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#local-attractions li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.pitch-typess {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.pitch-typess h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.pitch-typess p {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pitch-typess label {
+  color: #333;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.pitch-typess select,
+.pitch-typess input[type="date"],
+.pitch-typess input[type="submit"] {
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.pitch-typess select {
+  width: 100%;
+}
+
+.pitch-typess input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pitch-typess input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#form label,
+input,
+select {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#form input[type="submit"] {
+  width: auto;
+}
+
+#map {
+  height: 400px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  #section h2 {
+    font-size: 20px;
+  }
+
+  #form label,
+  input,
+  select {
+    margin-bottom: 3px;
+  }
+}
